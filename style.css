@@ -1,0 +1,191 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#main-div {
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('clock.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#clock-div {
+
+    width: 60%;
+    height: 45vh;
+
+    background: linear-gradient(65deg, rgba(130,227,231,0.38996848739495793) 0%,
+               rgba(165,227,177,1) 5%, rgba(215,165,226,1) 15%,
+               rgba(244,166,148,1) 32%, rgba(162,212,229,1) 47%,
+               rgba(200,162,229,1) 64%, rgba(228,183,227,1) 74%,
+               rgba(227,192,192,1) 88%, rgba(161,216,227,1) 100%);
+
+    border-radius: 10px;
+    font-size: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 0 15px 15px white;
+    font-family: sans-serif;
+}
+
+#clock-div:hover {
+
+    cursor: pointer;
+}
+
+#main-clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#day {
+    font-size: 30px;
+    padding: 20px;
+    font-weight: bold;
+}
+
+#p1 {
+    color: rgb(255, 28, 28);
+}
+
+#p2 {
+    color: rgb(247, 247, 7);
+}
+
+#p3 {
+    color: rgb(6, 144, 6);
+}
+
+#time {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    font-size: 20px;
+    font-weight: bold;
+    gap: 60px;
+}
+
+
+/*======== MEDIA QUERY ======== */
+
+@media only screen and (max-width:1024px){
+    
+    #clock-div {
+
+        width: 70%;
+        
+      }
+}
+
+@media only screen and (max-width:900px){
+    
+    #clock-div {
+
+        width: 70%;
+        height:40vh;
+        
+      }
+
+      #day{
+        padding: 15px;
+        margin-left: 15px;
+      }
+}
+
+@media only screen and (max-width:900px){
+
+    #clock-div{
+        font-size: 70px;
+    }
+
+    #time{
+        font-size: 15px;
+    }
+
+    #day{
+        font-size: 18px;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width:900px){ 
+
+    #clock-div{
+        font-size: 60px;
+        gap: 25px;
+    }
+
+    #time{
+        font-size: 15px;
+    }
+
+    #time{
+        font-size: 12px;
+        gap:40px
+    }
+}
+
+@media only screen and (max-width:600px){  
+
+    #clock-div {
+        width: 80%;
+        height:38vh;
+      }
+}
+
+@media only screen and (max-width:510px){  
+
+    #clock-div {
+       font-size: 50px;
+       height:35vh;
+      }
+
+      #day{
+        font-size: 14px;
+      }
+}
+
+
+@media only screen and (max-width:430px){  
+
+    #clock-div{
+        width:85%;
+        height:30vh;
+        gap:10px;
+        font-size: 45px;
+    }
+}
+
+@media only screen and (max-width:370px){  
+
+    #clock-div{
+        font-size: 38px;
+        height:28vh;
+    }
+
+    #time{
+        font-size: 8px;
+    }
+}
+
+@media only screen and (max-width:320px){  
+
+    #clock-div{
+        font-size: 35px;
+        height:25vh;
+        width:90%;
+    }
+
+    #day{
+        padding: 10px;
+        margin-left: 10px;
+      }
+}
